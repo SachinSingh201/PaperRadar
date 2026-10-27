@@ -30,7 +30,7 @@ class RadarConfig:
         self.sources_data = load_yaml(CONFIG_DIR / "sources.yaml").get("sources", [])
 
         # Environment overrides
-        self.contact_email = os.getenv("RADAR_CONTACT_EMAIL", "researcher@example.com")
+        self.contact_email = (os.getenv("RADAR_CONTACT_EMAIL") or "").strip() or "researcher@example.com"
         self.profile = (
             profile_override
             or os.getenv("RADAR_PROFILE")

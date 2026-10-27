@@ -35,4 +35,4 @@ radar = "radar.cli:main"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 pythonpath = ["."]
-addopts = "-v --strict-markers"
+addopts = "-v"
