@@ -10,7 +10,10 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from bs4 import BeautifulSoup
-from dateutil import parser as date_parser
+try:
+    from dateutil import parser as date_parser
+except ImportError:
+    date_parser = None
 
 
 @dataclass
@@ -142,8 +145,18 @@ def parse_iso_date(raw_date: Any) -> str:
             raw_date = raw_date.replace(tzinfo=datetime.timezone.utc)
         return raw_date.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    if date_parser is not None:
+        try:
+            dt = date_parser.parse(str(raw_date))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=datetime.timezone.utc)
+            return dt.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        except Exception:
+            pass
+
     try:
-        dt = date_parser.parse(str(raw_date))
+        clean_str = str(raw_date).replace("Z", "+00:00")
+        dt = datetime.datetime.fromisoformat(clean_str)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=datetime.timezone.utc)
         return dt.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

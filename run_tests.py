@@ -17,8 +17,9 @@ if __name__ == "__main__":
         try:
             with open(summary_file, "a", encoding="utf-8") as f:
                 if code == 0:
-                    f.write("### :white_check_mark: All Tests Passed Successfully!")
+                    f.write("### :white_check_mark: All Tests Passed Successfully!\n")
                 else:
-                    f.write(f"### :x: Pytest Failed with Code {code}")
-        except Exception: pass
-    sys.exit(code)
+                    f.write(f"### :x: Pytest Failed with Code {code}\n")
+        except Exception:
+            pass
+    sys.exit(int(code))
