@@ -48,8 +48,9 @@ jobs:
       - name: Run Test Suite
         env:
           PYTHONPATH: .
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
         run: |
-          python -m pytest -v
+          python -m pytest tests/ -v
 
       - name: Execute Radar Pipeline (Fetch, Score, Summarize, Build Site)
         env:
