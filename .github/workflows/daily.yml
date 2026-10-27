@@ -52,7 +52,7 @@ jobs:
           PYTHONPATH: .
           PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
         run: |
-          python -m pytest tests/ -v
+          python run_tests.py
 
       - name: Execute Radar Pipeline (Fetch, Score, Summarize, Build Site)
         env:
