@@ -1,6 +1,8 @@
 name: Paper Radar Daily Digest & Deploy
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: "0 6 * * *" # Runs daily at 06:00 UTC (11:30 AM IST)
   workflow_dispatch:   # Allows manual trigger button in GitHub Actions tab
