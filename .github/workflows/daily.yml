@@ -44,14 +44,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
-          python -m pip install -e .
 
       - name: Run Test Suite
+        env:
+          PYTHONPATH: .
         run: |
           python -m pytest -v
 
       - name: Execute Radar Pipeline (Fetch, Score, Summarize, Build Site)
         env:
+          PYTHONPATH: .
           RADAR_PROFILE: CLOUD
           RADAR_CONTACT_EMAIL: ${{ secrets.RADAR_CONTACT_EMAIL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
