@@ -228,3 +228,43 @@ git commit -m "Initial commit: Paper Radar - AI research intelligence pipeline &
 # 7. Push to GitHub repository
 git push -u origin main
 ```
+
+---
+
+## 8. GitHub Actions & GitHub Pages Setup (Daily Automation)
+
+The project includes an automated daily workflow located in `.github/workflows/daily.yml`.
+
+### How it works:
+1. **Schedule**: Runs automatically every day at 06:00 UTC (11:30 AM IST).
+2. **Duration**: Executes for approximately 2 to 5 minutes (well within the 15-minute safety timeout).
+3. **Tasks Executed**:
+   - Checks out the code.
+   - Restores the cached `radar.db` database so past papers and bookmarks are preserved.
+   - Fetches the latest 24–48 hours of research papers, releases, and lab blogs.
+   - Normalizes, deduplicates (RapidFuzz >= 90%), and classifies by topic.
+   - Generates 3-bullet factual summaries and impact sentences.
+   - Re-renders the static HTML website and full-text search index (`site/`).
+   - Automatically deploys the updated static site to **GitHub Pages**.
+   - Sends the daily Telegram digest (if secrets are configured).
+
+### Step 1: Enable GitHub Pages in your Repository
+1. Go to your GitHub repository: [https://github.com/SachinSingh201/PaperRadar](https://github.com/SachinSingh201/PaperRadar)
+2. Click **Settings** (top right tab).
+3. In the left sidebar, click **Pages** (under "Code and automation").
+4. Under **Build and deployment** -> **Source**, select **`GitHub Actions`**.
+5. Once selected, GitHub will automatically use the `.github/workflows/daily.yml` workflow.
+
+### Step 2: (Optional) Add GitHub Secrets
+To receive Telegram notifications and comply with ethical User-Agent contact emails:
+1. Go to **Settings** -> **Secrets and variables** -> **Actions**.
+2. Click **New repository secret** and add:
+   - `RADAR_CONTACT_EMAIL`: your email address
+   - `TELEGRAM_BOT_TOKEN`: your Telegram bot token
+   - `TELEGRAM_CHAT_ID`: your Telegram chat ID
+   - `LLM_API_KEY`: (optional) Gemini/OpenAI API key
+
+### Step 3: Triggering Manually Anytime
+1. Go to the **Actions** tab on your GitHub repo.
+2. In the left sidebar, click **Paper Radar Daily Digest & Deploy**.
+3. Click the **Run workflow** dropdown on the right and select **Run workflow**.
