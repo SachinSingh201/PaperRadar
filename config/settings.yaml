@@ -1,0 +1,24 @@
+profile: LOCAL_LITE        # LOCAL_LITE | LOCAL_PLUS | CLOUD
+user_agent: "PaperRadar/1.0 (personal research; contact: {contact_email})"
+max_items_per_run: 300
+lookback_hours: 48
+request_interval_seconds: 3.0
+timeout_seconds: 15
+max_response_bytes: 2000000
+db_path: "radar.db"
+site_dir: "site"
+
+scoring:
+  recency_weight: 0.35
+  authority_weight: 0.25
+  topic_weight: 0.25
+  trending_weight: 0.15
+  decay_half_life_hours: 72
+
+summary:
+  mode: extractive         # extractive | ollama | api
+  daily_token_cap: 50000
+
+publish:
+  site_visibility: public  # public | private
+  telegram_digest: true

@@ -1,0 +1,12 @@
+# Paper Radar Dependencies
+httpx>=0.28.0
+feedparser>=6.0.11
+jinja2>=3.1.4
+pyyaml>=6.0.2
+rapidfuzz>=3.9.0
+python-dotenv>=1.0.1
+pytest>=8.0.0
+beautifulsoup4>=4.12.3
+
+# Optional:
+# python-telegram-bot>=21.0

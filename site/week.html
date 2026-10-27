@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This Week's Top AI Research — Paper Radar</title>
+  <meta name="description" content="Curated, safe, daily intelligence on frontier AI research, LLMs, RAG, agents, MCP, and open models.">
+  <link rel="alternate" type="application/rss+xml" title="Paper Radar Digest" href="feed.xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-radar">📡</span>
+          <span class="logo-text">Paper Radar</span>
+        </a>
+        <span class="badge badge-profile">LOCAL_LITE</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link ">Today</a>
+        <a href="week.html" class="nav-link active">This Week</a>
+        <a href="topics.html" class="nav-link ">Topics</a>
+        <a href="organizations.html" class="nav-link ">Labs & Orgs</a>
+        <a href="search.html" class="nav-link ">Search</a>
+        <a href="about.html" class="nav-link ">About & Sources</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">📊 Weekly Intelligence</div>
+    <h1 class="hero-title">This Week's Top 50 Papers & Releases</h1>
+    <p class="hero-subtitle">Curated top impact research across labs, aggregators, and protocols over the last 7 days.</p>
+  </div>
+</section>
+
+<section class="items-grid">
+  
+  <article class="radar-card" data-type="release" id="card-303">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Ollama</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-25</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.85</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ollama/ollama/releases/tag/v0.40.11" target="_blank" rel="noopener noreferrer">Ollama Local Model Releases: v0.40.11</a>
+    </h2>
+
+    
+    <p class="card-authors">github-actions[bot]</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Speech Ollama can now generate speech on macOS.<br>- ollama run plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible /v1/audio/speech endpoint.<br>- " --ask " Is this a billing i...<br><br>**Why it matters:** Provides actionable insights and reference implementations for MULTIMODAL systems, addressing critical challenges highlighted by Ollama.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ollama/ollama/releases/tag/v0.40.11" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="303" data-uid="gh:ollama/ollama:v0.40.11" data-title="Ollama Local Model Releases: v0.40.11">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-34">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.75</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32253" target="_blank" rel="noopener noreferrer">RSIHub: A Composable Framework for Agent-Evolution Methods</a>
+    </h2>
+
+    
+    <p class="card-authors">Zimu Wang, Xiaobo Wang, Siyu Ye, Jiaqi Li, Silin Chen, Yuling Shi, Ruobing Wang, Jingjing Zhang, Chaofan Wang, Kai Wu, Mengnan Qi, Kai Cai, Xiaodong Gu, Zilong Zheng</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery.<br>- We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure.<br>- Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32253" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="34" data-uid="arxiv:2610.32253" data-title="RSIHub: A Composable Framework for Agent-Evolution Methods">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" id="card-301">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.73</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11905" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11905</a>
+    </h2>
+
+    
+    <p class="card-authors">github-actions[bot]</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - vulkan: rms norm optimization using subgroup reductions ( #29882 ) RMS Norm Subgroup reductions optimizaton Fix build error Improved optimization Make usage of BLOCK_SIZE consistent Add fast path to skip 2nd subgroupAdd Add AMD Vendor to subgroup reduction opt Add comment clarifying rms_dict and merge_maps behavior Add unroll Rebase Fixed syntax issue Add 128/256/512 block sizes to non-subgroup path Remove trailing whitespace Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/60062594 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64,...<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11905" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="301" data-uid="gh:ggml-org/llama.cpp:b11905" data-title="llama.cpp Engine Releases: b11905">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-35">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.72</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32965" target="_blank" rel="noopener noreferrer">RynnUnify: Towards Unified Embodied Brain</a>
+    </h2>
+
+    
+    <p class="card-authors">Minghao Zhu, Bohan Hou, Kun Xiang, Zixuan Wang, Yinzhou Tang, Yifei Yang, Zhikai Wang, Tianyi Zhang, Kehan Li, Haoyu Zhao, Siteng Huang, Leigang Qu, Sicong Leng, Dongchi Huang, Mingxiu Chen, Shijian Lu, Yue Wang, Xiaodan Liang, Zhenyu Zeng, Deli Zhao, Chengju Liu, Jianfei Yang, Xin Li</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning.<br>- We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control.<br>- To evaluate these capabilities, we introduce Rynn-VP and Rynn-GEU for long-horizon visual planning and anticipatory reasoning.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32965" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="35" data-uid="arxiv:2610.32965" data-title="RynnUnify: Towards Unified Embodied Brain">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-38">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.72</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.30932" target="_blank" rel="noopener noreferrer">UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents</a>
+    </h2>
+
+    
+    <p class="card-authors">Jujia Zhao, Jiakai Tang, Jing Yu, Wen Chen, Jian Wu, Han Zhu, Fei Sun, Suzan Verberne, Zhaochun Ren</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Agentic recommendation pursues shopper goals through sequences of context-dependent decisions.<br>- Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions.<br>- Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.30932" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="38" data-uid="arxiv:2610.30932" data-title="UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-46">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.72</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31198" target="_blank" rel="noopener noreferrer">Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models</a>
+    </h2>
+
+    
+    <p class="card-authors">Ofek Avivi, Eliron Rahimi, Avi Mendelson, Chaim Baskin</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Diffusion Language Models (DLMs) introduce unique quantization challenges due to their iterative denoising process.<br>- Building on these findings, we introduce T 2Quant, a task and time-aware mixedprecision quantization framework that uses a label-free sensitivity signal to optimally allocate activation precision across denoising steps under a fixed bit-width budget.<br>- We further show that these patterns can be predicted without groundtruth labels or task-specific evaluation metrics.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31198" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="46" data-uid="arxiv:2610.31198" data-title="Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" id="card-300">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.70</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11906" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11906: ggml-cpu : rewrite concat as one row kernel for all types (#31179)</a>
+    </h2>
+
+    
+    <p class="card-authors">ServeurpersoCom</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Every dst row comes from src0 or src1, or for dim 0 from the row of src0 followed by the row of src1, so a single kernel covers every type: a dense source row is one memcpy, quantized types included, and a strided source is copied element by element with the element size known at compile time.<br>- Rows are split across threads instead of i2 alone, which is often 1, and are copied in tiles of 32: for a transposed source the elements are walked in the outer loop, so the rows of a tile read neighboring addresses instead of jumping a full row stride per element.<br>- Add transposed b cases to test_conca...<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11906" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="300" data-uid="gh:ggml-org/llama.cpp:b11906" data-title="llama.cpp Engine Releases: b11906: ggml-cpu : rewrite concat as one row kernel for all types (#31179)">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" id="card-302">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.70</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11902" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11902: sycl: add set_tensor_2d for faster tensor-split loading (#30358)</a>
+    </h2>
+
+    
+    <p class="card-authors">Captain-Tripps</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - sycl: add set_tensor_2d for faster tensor-split loading Pack host rows into chunks of up to 64 MiB when destination rows are contiguous, avoiding a separate upload call for each row.<br>- Keep the existing per-row copy path for non-contiguous destinations.<br>- sycl: batch 2D tensor uploads through shared staging slots Implement set_tensor_2d to speed up tensor-split model loading by packing rows into the existing p...<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11902" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="302" data-uid="gh:ggml-org/llama.cpp:b11902" data-title="llama.cpp Engine Releases: b11902: sycl: add set_tensor_2d for faster tensor-split loading (#30358)">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-49">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.70</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.30418" target="_blank" rel="noopener noreferrer">Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems</a>
+    </h2>
+
+    
+    <p class="card-authors">Daniel Ruiz, Luca Luceri, Emilio Ferrara</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Modern LLM agents can retrieve information from accessible documents, and then disclose a sensitive conclusion assembled from them.<br>- Even under benign queries designed to be answerable from one document, GPT-5.6-Sol, the best performing model tested, discloses forbidden composites in 7.08% of answers (95% CI: 3.75-10.67%) in simulation, with worse disclosure rates in live harnesses.<br>- These results point to a troubling conclusion: sensitive data leaks via mosaic-style events are an observed confidentiality failure mode in the evaluated settings at non-negligible rates.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.30418" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="49" data-uid="arxiv:2610.30418" data-title="Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-30">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.69</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31066" target="_blank" rel="noopener noreferrer">Dual Exam: Controlled Evaluation of Multimodal Agents and World Models</a>
+    </h2>
+
+    
+    <p class="card-authors">Zhefan Rao, Meng Chu, Xuan Zhang, Jingfan Chen, Guohao Cai, Runyi Li, Shiyi Du, Ning Lu, Xu Huang, Zhixuan Chen, Feng Nie, Harold Haodong Chen, Hanwen Wang, Wen-Jie Shu, Yajing Bai, Xianfeng Wu, Xuanhua He, Shuhan Guo, Ziyue Ma, Ruichuan An, Long Bai, Miaosen Chai, Wenhao Chai, Jingye Chen, Qi Chen, Xuhang Chen, Wei Chow, Minghao Fu, Yunhao Gou, Haokun Gui, Dong Huang, Wei Huang, Zi Cheng Huang, Haibo Jin, Lingdong Kong, Leung Chun Ho, Tianqin Li, Yanheng Li, Jiayuan Liu, Jiyang Liu, Mingyu Liu, Shaoteng Liu, Xiaocheng Lu, Yawen Luo, Zeyu Qin, Tiancheng Shen, Yueqi Song, Zhaolong Su, Hengkai Tan, Tianhao Tang, Yiran Tao, Juncheng Wang, Qinghe Wang, Shangshang Wang, Yingying Wang, Fang Wu, Tiange Xiang, Qiushi Yang, Weicai Ye, Weichen Yu, Jiarui Zhang, Jize Zhang, Liuzhou Zhang, Renrui Zhang, Sheng Zhang, Wenhu Zhang, Junru Zhao, Lingting Zhu, Yuxin Zuo, Yutong Bai, Long Chen, Yang Deng, Ziqi Huang, Yeying Jin, Weijia Li, Kevin Qinghong Lin, Quande Liu, See-Kiong Ng, Hongliang Ren, Hongru Wang, Shujun Wang, Qifeng Chen, Haoxuan Che</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - World Models (WMs) can support Multimodal Agents (MAs) through simulated experience, while Agent trajectories can inform World Model refinement.<br>- We introduce Dual Exam, which tests Agents under fixed environment response mechanisms and World Models under fixed action interventions across physical, digital, social, and scientific domains.<br>- Results reveal uneven task performance and failures to preserve task-relevant state.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31066" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="30" data-uid="arxiv:2610.31066" data-title="Dual Exam: Controlled Evaluation of Multimodal Agents and World Models">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-250">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.66</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/introducing-gpt-6-1-terra" target="_blank" rel="noopener noreferrer">Introducing GPT-6.1 Terra</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Bringing fast and capable computer use to everyone<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/introducing-gpt-6-1-terra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="250" data-uid="url:35e334c198740f74" data-title="Introducing GPT-6.1 Terra">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-31">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.66</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31162" target="_blank" rel="noopener noreferrer">HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games</a>
+    </h2>
+
+    
+    <p class="card-authors">Zecong Tang, Zian Guan, Yuncheng Guo, Zhanqiu Zhang, Yiwen Guo, Bo Dai</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control.<br>- To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness.<br>- We also train the VLA through world knowledge injection, imitation learning, and reinforcement learning with environment feedback to improve reliability and recovery.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31162" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="31" data-uid="arxiv:2610.31162" data-title="HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-25">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.66</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32770" target="_blank" rel="noopener noreferrer">On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models</a>
+    </h2>
+
+    
+    <p class="card-authors">Leon Sick, Lukas Hoyer, Yannick Strümpler, Christian Reisswig, Timo Ropinski, Federico Tombari</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - On-policy self-distillation enables post-training foundation models without relying on stronger external teachers.<br>- However, existing approaches rely on ground-truth question-answer pairs, human-curated problem sets, or other supervised signals.<br>- We find that self-distillation on fully synthetic privileged information enables a model to improve across multiple domains while retaining its capabilities on domains it is not self-trained on.<br><br>**Why it matters:** Provides actionable insights and reference implementations for MULTIMODAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32770" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="25" data-uid="arxiv:2610.32770" data-title="On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-28">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.65</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32002" target="_blank" rel="noopener noreferrer">DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation</a>
+    </h2>
+
+    
+    <p class="card-authors">Siyang He, Qiqi Wang, Fan Liu, Yuncheng Huang, Pengfei Xu, Xi Chen, Ziwei He, Xipeng Qiu</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - The rapid growth of microdramas has increased demand for high-quality script production.<br>- To address these challenges, we propose DraMaze, a multi-agent pipeline that explores diverse causal paths through trope memory-guided evolutionary tree search and mutation.<br>- We also introduce MiDramaBench, a bilingual benchmark for evaluating script logic and creative quality across different script lengths, together with causal-pattern metrics for narrative repetition and diversity.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32002" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="28" data-uid="arxiv:2610.32002" data-title="DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-29">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.64</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31931" target="_blank" rel="noopener noreferrer">Every Weight Is a Path of Shared Discrete Decisions</a>
+    </h2>
+
+    
+    <p class="card-authors">Ammar Ali, Stamatis Lefkimmiatis</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - We introduce TWIG (Tree-structured Weights with Inherited Gates), a representation in which every weight of a neural network is the end of a path of small discrete decisions: a sign, a shift by a power of two, a zero gate, an index into a shared table.<br>- Today these questions are handled apart: each compression method brings its own format and solver, a circuit with fixed weights needs a dedicated constant multiplier for every weight, and discrete solvers reach only narrow subproblems such as rounding.<br>- On five weight matrices of a large language model, a flat tree whose signed power-of-two terms are chosen per weight for circuit cost, with no group scales, needs 9--15\% fewer additions than GPTQ at equal layer error at 3- and 4-bit accuracy on typical matrices, and 20--55\% fewer on matrices with strong outliers.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31931" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="29" data-uid="arxiv:2610.31931" data-title="Every Weight Is a Path of Shared Discrete Decisions">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-27">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.62</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32894" target="_blank" rel="noopener noreferrer">LoCA: Enabling Multi-Modality in Geospatial Location Encoders</a>
+    </h2>
+
+    
+    <p class="card-authors">Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos, Eleni Saka, Dimitris Christofis, Nikolaos Ioannis Bountos, Konstantin Klemmer, Ioannis Papoutsis, Yannis Panagakis, Mihalis A. Nicolaou</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery.<br>- We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum.<br>- Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.<br><br>**Why it matters:** Provides actionable insights and reference implementations for SAFETY systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32894" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="27" data-uid="arxiv:2610.32894" data-title="LoCA: Enabling Multi-Modality in Geospatial Location Encoders">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-252">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.62</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/securing-our-frontier-model-training-environment" target="_blank" rel="noopener noreferrer">Securing our frontier model training environment</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/securing-our-frontier-model-training-environment" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="252" data-uid="url:f8c156dba7886826" data-title="Securing our frontier model training environment">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-247">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.61</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/chatgpt-expanding-world-of-work" target="_blank" rel="noopener noreferrer">ChatGPT’s expanding world of work</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/chatgpt-expanding-world-of-work" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="247" data-uid="url:27334100e818b985" data-title="ChatGPT’s expanding world of work">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-42">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.61</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.30043" target="_blank" rel="noopener noreferrer">TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments</a>
+    </h2>
+
+    
+    <p class="card-authors">Yicheng Xu, Zhikai Xu, Ziyuan Chen, Yuhang Dong, Tao Zhang, Zhucun Xue, Yong Liu, Jiangning Zhang</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Robots must act under physical and social constraints while adapting to changes in their environment and human needs.<br>- We introduce TARSphere, a robot-oriented full-stack framework for physically and socially grounded long-horizon embodied agents.<br>- An event-driven finite-state machine (FSM) uses completed actions and delivered information to update task states and evaluate outcomes.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.30043" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="42" data-uid="arxiv:2610.30043" data-title="TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-17">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.61</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.01352" target="_blank" rel="noopener noreferrer">MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning</a>
+    </h2>
+
+    
+    <p class="card-authors">Juekai Lin, Honglin Lin, Yuqian Yuan, Xiaolong Wu, Jie Cao, Liang Liang, Yunqi Cao, Yun Zhu, Wenqiao Zhang, Lijun Wu</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Open multimodal reasoning models have benefited from large-scale reasoning supervision, yet reliable post-training remains challenging due to uneven data quality, inefficient supervision construction, imbalanced difficulty, and cross-domain interference.<br>- We introduce MMVistaReason (MVR), an open-data post-training recipe with three components: (1) broader capability coverage across complementary Analytical and Real-World reasoning groups, emphasizing structured reasoning versus visual perception and spatial grounding; (2) efficient SFT and RL data construction, standardizing heterogeneous open data through staged cleaning and annotation, combining difficulty-aware cascaded teacher distillation with answer-likelihood-based trajectory selection to construct MVR-SFT-528K, and applying scale-specific frontier filtering for MVR-RL-63K; and (3) specialize-then-integrate training, which trains complementary RL experts and consolidates their capabilities through multi-teacher on-policy distillation (MOPD).<br>- Mixed-domain RL introduces benchmark-level negative transfer, whereas MOPD provides consistent capability integration, with the preferred KL direction varying across model scales.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.01352" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="17" data-uid="arxiv:2610.01352" data-title="MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-33">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32250" target="_blank" rel="noopener noreferrer">Easy-3Dfy: Object-Level Geometric Composition for Single-Image 3D Scene Construction</a>
+    </h2>
+
+    
+    <p class="card-authors">Ziang Zhang, Wenyou Yi, Zehan Wang, Jiachen Xu, Xintong Han, Chunchao Guo, Zhou Zhao</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Single-image 3D scene construction is a fundamental problem in 3D vision.<br>- Recent methods such as SAM-3Dfy enable end-to-end reconstruction of 3D assets and their scene layouts, but still struggle with fine-grained scene geometry and asset quality.<br>- Without requiring complete scene-level supervision, the proposed workflow consistently outperforms SAM-3Dfy across multiple geometric metrics on Scene-Maker and 3D-FUTURE200.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32250" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="33" data-uid="arxiv:2610.32250" data-title="Easy-3Dfy: Object-Level Geometric Composition for Single-Image 3D Scene Construction">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-4">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31572" target="_blank" rel="noopener noreferrer">On the Token Collapse Phenomenon in Textual Graph Soft Prompting</a>
+    </h2>
+
+    
+    <p class="card-authors">Andrea Giuseppe Di Francesco, Rishabh Jain, Franco Maria Nardini, Nicola Tonellotto, Pietro Liò, Fabrizio Silvestri</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#rag" class="tag-pill">#rag</a>
+      
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Recent methods for injecting graph structure into LLM prompts include graph soft prompting, in which a graph neural network (GNN) learns graph-specific tokens that capture relational information among entities in textual prompts.<br>- Across three benchmarks, three graph encoders, two LLM families, and both frozen and LoRA-adapted models, G-Retriever's graph tokens become almost indistinguishable across inputs.<br>- Across three benchmarks, three graph encoders, two LLM families, and both frozen and LoRA-adapted models, G-Retriever's graph tokens become almost indistinguishable across inputs.<br><br>**Why it matters:** Provides actionable insights and reference implementations for RAG systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31572" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="4" data-uid="arxiv:2610.31572" data-title="On the Token Collapse Phenomenon in Textual Graph Soft Prompting">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-248">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/fanatics-streamline-fan-experience" target="_blank" rel="noopener noreferrer">How Fanatics and OpenAI streamline the fan experience</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look.<br>- Testing across roughly 30,000 MLB products showed 10% higher engagement.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/fanatics-streamline-fan-experience" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="248" data-uid="url:7e73eebe3e909303" data-title="How Fanatics and OpenAI streamline the fan experience">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-249">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/openai-cut-incident-investigation" target="_blank" rel="noopener noreferrer">How Ultrafast cut incident investigation from hours to minutes at OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes.<br>- Explore faster security analysis, code refactoring, and daily workflows.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/openai-cut-incident-investigation" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="249" data-uid="url:742d30efdc4090c1" data-title="How Ultrafast cut incident investigation from hours to minutes at OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-10">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.59</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31819" target="_blank" rel="noopener noreferrer">Speculative Diffusion is a Tale of Two Tradeoffs</a>
+    </h2>
+
+    
+    <p class="card-authors">Aaron Zorel, Guy Van den Broeck, Aditya Grover, Daniel Israel</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+      
+      <a href="topics.html#efficiency" class="tag-pill">#efficiency</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Speculative decoding is a technique that accelerates the inference speed of autoregressive large language models (LLMs) by sampling from a faster, lower quality draft model.<br>- Because diffusion models are able to sample faster than autoregressive models by generating tokens in parallel, they are considered strong candidates for draft models in speculative diffusion.<br>- This differs from recently developed diffusion LLMs (dLLMs), which are notably able to achieve substantial speedups by degrading the quality of their outputs with less diffusion effort.<br><br>**Why it matters:** Provides actionable insights and reference implementations for MULTIMODAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31819" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="10" data-uid="arxiv:2610.31819" data-title="Speculative Diffusion is a Tale of Two Tradeoffs">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-14">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.58</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31668" target="_blank" rel="noopener noreferrer">Reading, Writing, Sharing, and Interacting with the World through Video</a>
+    </h2>
+
+    
+    <p class="card-authors">Shengqiong Wu, Meng Luo, Bobo Li, Ziwei Liu, Shuicheng Yan, Ming-Hsuan Yang, Philip Torr, Hao Fei</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Video foundation models have advanced rapidly in understanding and generating visual sequences, while video world models seek to capture the underlying dynamics of the world they depict.<br>- This survey adopts world modeling as a unifying lens for examining these developments.<br>- Across tasks, representations, models, datasets, and benchmarks, we trace a shift in emphasis from clip-level recognition and perceptual fidelity toward persistent state, controllable evolution, physical and causal validity, and evaluation grounded in interaction and downstream decisions, and we distill the open challenges that follow.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31668" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="14" data-uid="arxiv:2610.31668" data-title="Reading, Writing, Sharing, and Interacting with the World through Video">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-37">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.57</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.29552" target="_blank" rel="noopener noreferrer">Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding</a>
+    </h2>
+
+    
+    <p class="card-authors">Xin Zhang, Haochen Wang, Beibei Lin, Zhaoxiang Zhang, Robby T. Tan, Jason Li, Dacheng Tao</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Fine-grained multimodal intelligence requires models to both understand a designated region and localize it from language.<br>- Existing methods learn these directions with separate objectives and task-specific annotations.<br>- Reconstruction overlap provides a verifiable reward for captioning, while individual localization rewards improve the inverse mapping.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.29552" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="37" data-uid="arxiv:2610.29552" data-title="Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-19">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.57</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31288" target="_blank" rel="noopener noreferrer">DISC: Domain-Integrated Similarity Cost for Time-Series Dataset</a>
+    </h2>
+
+    
+    <p class="card-authors">Yen-Ku Liu, Hongjie Chen, Franck Dernoncourt, Ryan Rossi</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - The growth of time-series datasets and foundation models has made dataset comparison a central part of time-series workflows.<br>- Assessing source-target transfer before model adaptation requires similarity estimates that can summarize transfer-related dataset relationships without exhaustive source-target evaluation over every candidate pair.<br>- We evaluate this gap by measuring the correlation between source-target similarity scores and downstream forecasting errors in out-of-distribution and transfer-learning settings.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31288" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="19" data-uid="arxiv:2610.31288" data-title="DISC: Domain-Integrated Similarity Cost for Time-Series Dataset">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-253">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.57</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/openai-nask-ai-safety-security-partnership" target="_blank" rel="noopener noreferrer">OpenAI and Poland’s NASK partner to advance AI safety and security</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for SAFETY systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/openai-nask-ai-safety-security-partnership" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="253" data-uid="url:1a543055a02f9816" data-title="OpenAI and Poland’s NASK partner to advance AI safety and security">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-7">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.56</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.30524" target="_blank" rel="noopener noreferrer">LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification</a>
+    </h2>
+
+    
+    <p class="card-authors">Zhipeng Cao, Peiyang Song, Nikolaus Vertovec, Weiru Cui, Zhihao Yang, Mingkang Liu, Luxia Lin, Bai Xue, Alessandro Abate</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#safety" class="tag-pill">#safety</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Lyapunov functions and barrier certificates give state-space guarantees of stability and safety, but synthesizing and verifying them---especially for nonlinear, high-dimensional systems---remains an open challenge.<br>- Existing pipelines verify candidates with numerical solvers (sum-of-squares programs), interval methods, or satisfiability-modulo-theories (SMT) solvers, which often require relaxations, are conservative, or scale poorly with model dimension and nonlinearity.<br>- These limitations have also shaped benchmark design: standard test suites are dominated by low-dimensional polynomial systems chosen to suit what solvers can handle rather than what engineering applications require.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.30524" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="7" data-uid="arxiv:2610.30524" data-title="LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-12">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.55</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31423" target="_blank" rel="noopener noreferrer">FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models</a>
+    </h2>
+
+    
+    <p class="card-authors">Huixin Xu, Ziya Yu, Peng Li</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Vision-language-action (VLA) models have become an important paradigm for robotic manipulation by unifying visual perception, language understanding, and action generation.<br>- However, our experiments show that existing VLA models do not fully exploit such multi-view complementarity.<br>- However, our experiments show that existing VLA models do not fully exploit such multi-view complementarity.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31423" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="12" data-uid="arxiv:2610.31423" data-title="FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-40">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.52</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.32909" target="_blank" rel="noopener noreferrer">HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training</a>
+    </h2>
+
+    
+    <p class="card-authors">Xihan Ma, Bo Zhang, Boxiong Li, Yuhan Bao, Ziyue Liu, Yucheng Wang</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller.<br>- Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run.<br>- Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.32909" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="40" data-uid="arxiv:2610.32909" data-title="HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-5">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.50</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31779" target="_blank" rel="noopener noreferrer">FLORA: An Open Model Suite for Scaling Robotics Data Engines</a>
+    </h2>
+
+    
+    <p class="card-authors">Sicong Leng, Yunze Man, Zhiqi Li, Jing Wang, Yuhe Zhang, Ryan Punamiya, Siddharth Patki, Kaiyuan Zheng, Zi-ang Cao, Zhiding Yu, Sifei Liu, Danfei Xu, Ben Levin, Jan Kautz, Yuke Zhu, Johan Bjorck, Linxi &amp;#34;Jim&amp;#34; Fan</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - The life-cycle of robotics foundation models crucially depends on data labels.<br>- We present Flora, an industrial-quality data engine used for training GR00T models, that simultaneously covers these capabilities.<br>- Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31779" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="5" data-uid="arxiv:2610.31779" data-title="FLORA: An Open Model Suite for Scaling Robotics Data Engines">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-265">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.48</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/empowering-cyber-defenders" target="_blank" rel="noopener noreferrer">Democratic governance of frontier AI, part II: Empowering cyber defenders</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#policy" class="tag-pill">#policy</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for POLICY systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/empowering-cyber-defenders" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="265" data-uid="url:e270f5ba4688033d" data-title="Democratic governance of frontier AI, part II: Empowering cyber defenders">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-39">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.46</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31734" target="_blank" rel="noopener noreferrer">DirCast: Live Esports Directing and Commentary with a Single Streaming Video-Language Model</a>
+    </h2>
+
+    
+    <p class="card-authors">Zixian Gao, Lixin Xiu, Penghao Luo, Xiangcheng Cao, Ziqi Cai, Zhen Li, Erwin Wu, Kaipeng Zhang</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - A live esports broadcast needs a director who chooses which camera goes on air and a caster who talks over that choice, every second and without knowing what comes next.<br>- Streaming video language models have learned to commentate, but only over a broadcast that a human director has already produced.<br>- DirCast directs better than rule-based and zero-shot directors including GPT-5, and its commentary wins 29.2 percent of comparisons against GPT-4o under the Proact-VL protocol, against 19.4 percent for the strongest of eleven streaming commentators that watch the human broadcast.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31734" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="39" data-uid="arxiv:2610.31734" data-title="DirCast: Live Esports Directing and Commentary with a Single Streaming Video-Language Model">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-9">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.46</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31810" target="_blank" rel="noopener noreferrer">PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean</a>
+    </h2>
+
+    
+    <p class="card-authors">Jiyuan Tan, Vasilis Syrgkanis, Jose Blanchet</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions.<br>- We introduce PaperFormalizer, a Lean-based agentic pipeline that helps authors find and close such gaps in their own papers and turn each paper into a Lean-verified version.<br>- Only the author knows what a statement is meant to say and how a formalization gap in a result is best fixed.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31810" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="9" data-uid="arxiv:2610.31810" data-title="PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-264">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.45</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/building-chatgpt-ad-stack" target="_blank" rel="noopener noreferrer">How we built ChatGPT’s novel ad stack for user trust and relevance</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#llm" class="tag-pill">#llm</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for LLM systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/building-chatgpt-ad-stack" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="264" data-uid="url:ea92da5c121ecb45" data-title="How we built ChatGPT’s novel ad stack for user trust and relevance">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-13">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.45</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31716" target="_blank" rel="noopener noreferrer">Does LeWorldModel Preserve Local Action Geometry?</a>
+    </h2>
+
+    
+    <p class="card-authors">Vasil Vasilev, Siddharth Nayak</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#eval" class="tag-pill">#eval</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - We examine how closely pretrained LeWorldModel (LeWM) reproduces the effects of small action changes.<br>- Using matched simulator and model responses, we measure action sensitivity with Gram matrices at three perturbation scales.<br>- On held-out directions, environment Grams achieve median embedding response errors of 17\% and 28\%, compared with 26\% and 38\% for an isotropic reference with the same trace.<br><br>**Why it matters:** Provides actionable insights and reference implementations for EVAL systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31716" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="13" data-uid="arxiv:2610.31716" data-title="Does LeWorldModel Preserve Local Action Geometry?">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-147">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Google Research</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.43</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/" target="_blank" rel="noopener noreferrer">Bringing foundational models to the front lines of TB screening</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Generative AI<br>- Details core concepts and practical implications in AI research.<br>- Full documentation and findings accessible via the source link.<br><br>**Why it matters:** Expands open knowledge and technological capabilities in machine learning.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="147" data-uid="url:30a34d758ba63be2" data-title="Bringing foundational models to the front lines of TB screening">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-251">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.43</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" target="_blank" rel="noopener noreferrer">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="251" data-uid="url:ee4c22366ef7e7ab" data-title="Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-21">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.42</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.29477" target="_blank" rel="noopener noreferrer">TenetBench: A Clause-Anchored Russian Corpus for Evaluating Language Models against Professional Codes of Ethics</a>
+    </h2>
+
+    
+    <p class="card-authors">Yegor Anichkov, Valery Vinogradov, Andrey Furov, Marina Polukoshko, Sergey Bolovtsov</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Codes of professional ethics guide and restrict specialists, who increasingly work with assistants built on large language models.<br>- In human validation of the frozen pipeline, specialists rated 0.995 of the conflicting tasks plausible, and the model judge agreed with the adjudicated label at Gwet's AC1 of at least 0.894 on 1,860 elements.<br>- Evaluations reporting broad categories of harm cannot show how often this happens or which provision is breached.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.29477" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="21" data-uid="arxiv:2610.29477" data-title="TenetBench: A Clause-Anchored Russian Corpus for Evaluating Language Models against Professional Codes of Ethics">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-254">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.40</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/decisions-api" target="_blank" rel="noopener noreferrer">Build more responsive apps with the Decisions API</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Fast, focused, low-cost decisions for any application.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/decisions-api" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="254" data-uid="url:891b7e0bbf66f86d" data-title="Build more responsive apps with the Decisions API">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-51">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Google DeepMind</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.39</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" target="_blank" rel="noopener noreferrer">Beyond tree cover: mapping the world’s forest types</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - A global map categorizing every 10-meter patch of land on Earth into distinct forest types.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Google DeepMind.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="51" data-uid="url:8f93170faf71fda6" data-title="Beyond tree cover: mapping the world’s forest types">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-23">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.39</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2606.00778" target="_blank" rel="noopener noreferrer">A path-following framework on fiber bundle for variational inequalities</a>
+    </h2>
+
+    
+    <p class="card-authors">Hongbo Sun</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Developing general-purpose algorithms with global asymptotic convergence guarantees for variational inequalities (VIs) remains a longstanding challenge.<br>- This paper proposes a path-following framework for finite-dimensional VIs with arbitrary continuous mappings and polytope domains.<br>- Its key innovation is to formulate the resulting problem on a fiber bundle, called the fixed-point bundle, whose geometric structure enables the systematic integration of initialization, path-following, and singularity avoidance.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2606.00778" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="23" data-uid="arxiv:2606.00778" data-title="A path-following framework on fiber bundle for variational inequalities">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-24">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-23</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.39</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2609.16158" target="_blank" rel="noopener noreferrer">The fixed-point bundle method over product-of-simplex domains arising from game equilibria</a>
+    </h2>
+
+    
+    <p class="card-authors">Hongbo Sun</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Developing general-purpose algorithms with global asymptotic convergence guarantees for Nash equilibria of general-sum games remains a longstanding challenge.<br>- This paper extends the fixed-point bundle framework for finite-dimensional variational inequalities (VIs) from simplex domains to product-of-simplex domains, enabling its direct application to Nash equilibrium computation.<br>- The resulting fixed-point bundle exhibits a composite fiber bundle structure.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2609.16158" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="24" data-uid="arxiv:2609.16158" data-title="The fixed-point bundle method over product-of-simplex domains arising from game equilibria">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-255">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.38</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/forward-deployed-engineering-means" target="_blank" rel="noopener noreferrer">What FDE means at OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - What forward deployed engineering means at OpenAI<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/forward-deployed-engineering-means" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="255" data-uid="url:6400feb681472530" data-title="What FDE means at OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-20">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.38</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.30006" target="_blank" rel="noopener noreferrer">Building Auditable AI Text Detectors with Sparse Autoencoders</a>
+    </h2>
+
+    
+    <p class="card-authors">Liam Dugan, Callum McDougall, Matthew Denton, Philip Pham, Christine Kaeser-Chen, Chris Callison-Burch</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals.<br>- We present a pipeline that converts a fine-tuned neural detector into a classifier that operates on human-readable concepts.<br>- Classifiers built on these extracted features are not only highly interpretable but exhibit stronger performance on out-of-distribution texts than either neural or stylometric alternatives.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.30006" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="20" data-uid="arxiv:2610.30006" data-title="Building Auditable AI Text Detectors with Sparse Autoencoders">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-256">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.38</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/uber-chatgpt-work-rollout" target="_blank" rel="noopener noreferrer">Uber brings ChatGPT Work to all employees with OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/uber-chatgpt-work-rollout" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="256" data-uid="url:eda525050cea8fce" data-title="Uber brings ChatGPT Work to all employees with OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-258">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.37</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/broad-access-through-consistent-standards" target="_blank" rel="noopener noreferrer">Broad access through consistent standards</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/broad-access-through-consistent-standards" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="258" data-uid="url:3f1a11956436b167" data-title="Broad access through consistent standards">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-257">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.37</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/att-legal" target="_blank" rel="noopener noreferrer">How AT&amp;T is rethinking in-house legal work with OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - AT&T is working with OpenAI to make legal knowledge easier to access.<br>- Learn how its LegalEdge team is rethinking intake and scaling legal judgment.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/att-legal" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="257" data-uid="url:39cad894cdd240fb" data-title="How AT&amp;T is rethinking in-house legal work with OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-148">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Google Research</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.37</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/" target="_blank" rel="noopener noreferrer">Empowering frontline maternal care with AI-assisted ultrasound</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Health & Bioscience<br>- Details core concepts and practical implications in AI research.<br>- Full documentation and findings accessible via the source link.<br><br>**Why it matters:** Expands open knowledge and technological capabilities in machine learning.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="148" data-uid="url:27c0a5d3fc255134" data-title="Empowering frontline maternal care with AI-assisted ultrasound">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="paper" id="card-36">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Hugging Face</span>
+        <span class="badge badge-type badge-type-paper">PAPER</span>
+        <span class="card-date">2026-10-22</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.37</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://huggingface.co/papers/2610.31569" target="_blank" rel="noopener noreferrer">Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models</a>
+    </h2>
+
+    
+    <p class="card-authors">Yufeng Liu, Bohao Fan, Juntu Zhao, Xinyi Wang, Hang Yu, Wenzhuan Luo, Yingzhi Wang, Qinghai Li, Yingdong Hu, Junliang Guo, Richard Wang, Dequan Wang, Yang Gao, Cheng Ma</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Recognizing task completion and failure enables robots to stop upon success and initiate recovery or replanning after failure.<br>- Existing methods augment Vision Language Action (VLA) policies with task status signal prediction to support these execution decisions.<br>- Extensive real-world manipulation experiments show that Echo accurately predicts task status and consistently improves policy performance.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by Hugging Face.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://huggingface.co/papers/2610.31569" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="36" data-uid="arxiv:2610.31569" data-title="Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-261">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.37</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/chatgpt-ads-expands-26-new-countries" target="_blank" rel="noopener noreferrer">ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/chatgpt-ads-expands-26-new-countries" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="261" data-uid="url:b1215e1aefc04c61" data-title="ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-259">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.36</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/openai-models-google-cloud" target="_blank" rel="noopener noreferrer">OpenAI models are coming to Google Cloud</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/openai-models-google-cloud" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="259" data-uid="url:95dedf578de78f3e" data-title="OpenAI models are coming to Google Cloud">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-260">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.36</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities" target="_blank" rel="noopener noreferrer">Patch the Planet: global response coordination as agents uncover critical vulnerabilities</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="260" data-uid="url:de9db6f384cbc788" data-title="Patch the Planet: global response coordination as agents uncover critical vulnerabilities">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-262">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.36</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data" target="_blank" rel="noopener noreferrer">Using thousands of AI agents to uncover new leads in biological data</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="262" data-uid="url:64ddfb139fec8a1c" data-title="Using thousands of AI agents to uncover new leads in biological data">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" id="card-263">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-21</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.36</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/cloudflare-cyber" target="_blank" rel="noopener noreferrer">Cloudflare links vulnerability discovery to defense with OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review.<br>- Its developers use Codex to build faster and improve code quality.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/cloudflare-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="263" data-uid="url:3fe372fb2e8166f0" data-title="Cloudflare links vulnerability discovery to defense with OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <p><strong>Paper Radar</strong> — Automated ethical aggregation. Zero trackers, zero cookies, static architecture.</p>
+        <p class="text-muted">Generated at 2026-10-27 12:46:21 UTC • <a href="feed.xml">RSS Feed</a> • <a href="about.html">Verified Sources (23)</a></p>
+      </div>
+      <div class="footer-badges">
+        <span class="badge badge-subtle">SQLite + FTS5</span>
+        <span class="badge badge-subtle">Robots.txt Enforced</span>
+        <span class="badge badge-subtle">Prompt-Guarded</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Paper Radar — Methodology & Sources</title>
+  <meta name="description" content="Curated, safe, daily intelligence on frontier AI research, LLMs, RAG, agents, MCP, and open models.">
+  <link rel="alternate" type="application/rss+xml" title="Paper Radar Digest" href="feed.xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-radar">📡</span>
+          <span class="logo-text">Paper Radar</span>
+        </a>
+        <span class="badge badge-profile">LOCAL_LITE</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link ">Today</a>
+        <a href="week.html" class="nav-link ">This Week</a>
+        <a href="topics.html" class="nav-link ">Topics</a>
+        <a href="organizations.html" class="nav-link ">Labs & Orgs</a>
+        <a href="search.html" class="nav-link ">Search</a>
+        <a href="about.html" class="nav-link active">About & Sources</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">🛡️ Transparency & Methodology</div>
+    <h1 class="hero-title">About Paper Radar</h1>
+    <p class="hero-subtitle">An ethical, lightweight, automated intelligence pipeline designed for researchers, engineers, and machine learning practitioners.</p>
+  </div>
+</section>
+
+<div class="about-content container">
+  <div class="about-card">
+    <h2>Architecture & Core Principles</h2>
+    <p>Paper Radar is built around a zero-attack-surface static architecture. It runs on a lightweight schedule, fetches only public feeds and APIs, extracts concise factual summaries, and outputs a static site with no backend databases exposed to the public internet.</p>
+    <ul>
+      <li><strong>Official Feeds & APIs First:</strong> Only official feeds (Atom/RSS) and public REST APIs are indexed. No paywalled or login-gated content is ever scraped.</li>
+      <li><strong>Robots.txt Enforced:</strong> All domains are checked against their official <code>robots.txt</code>. Disallowed paths are completely skipped.</li>
+      <li><strong>Rate Limiting:</strong> Enforces a strict 3-second delay between requests per domain to ensure zero server burden on publishers.</li>
+      <li><strong>Untrusted Data Defense:</strong> All fetched content is treated as untrusted data and strictly sanitized against prompt injections.</li>
+      <li><strong>Privacy First:</strong> Zero trackers, zero analytics, zero external scripts, zero advertising.</li>
+    </ul>
+  </div>
+
+  <div class="about-card">
+    <h2>Scoring Algorithm</h2>
+    <p>Every paper and release receives a normalized composite score calculated as:</p>
+    <code>Score = 0.35 × Recency + 0.25 × Source Authority + 0.25 × Topic Relevance + 0.15 × Trending Signals</code>
+    <p>Recency follows an exponential decay with a 72-hour half-life, ensuring fresh breakthroughs are highlighted while high-impact models remain discoverable.</p>
+  </div>
+
+  <div class="about-card">
+    <h2>Indexed Sources Directory</h2>
+    <p>Below is the complete registry of active sources, access methods, and terms of service:</p>
+
+    <div class="sources-table-wrapper">
+      <table class="sources-table">
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Organization</th>
+            <th>Type</th>
+            <th>Method</th>
+            <th>Authority Tier</th>
+            <th>Terms of Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><strong>arXiv Computer Science &amp; AI</strong></td>
+            <td>arXiv</td>
+            <td><span class="badge badge-type badge-type-paper">paper</span></td>
+            <td><code>arxiv</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://arxiv.org/help/api/tou" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Hugging Face Daily Papers</strong></td>
+            <td>Hugging Face</td>
+            <td><span class="badge badge-type badge-type-paper">paper</span></td>
+            <td><code>huggingface</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://huggingface.co/terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Google DeepMind Research</strong></td>
+            <td>Google DeepMind</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Google Research Blog</strong></td>
+            <td>Google Research</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>OpenAI News &amp; Research</strong></td>
+            <td>OpenAI</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://openai.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Anthropic News &amp; Announcements</strong></td>
+            <td>Anthropic</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://www.anthropic.com/legal/consumer-terms" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Microsoft Research Blog</strong></td>
+            <td>Microsoft Research</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://www.microsoft.com/en-us/legal/terms-of-use" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>NVIDIA Technical &amp; Research Blog</strong></td>
+            <td>NVIDIA</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://www.nvidia.com/en-us/about-nvidia/legal-info/" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Apple Machine Learning Research</strong></td>
+            <td>Apple</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://www.apple.com/legal/internet-services/terms/site.html" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Hugging Face Blog</strong></td>
+            <td>Hugging Face</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://huggingface.co/terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Cohere AI Blog</strong></td>
+            <td>Cohere</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 2</td>
+            <td><a href="https://cohere.com/terms-of-use" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>LangChain Official Blog</strong></td>
+            <td>LangChain</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 2</td>
+            <td><a href="https://www.langchain.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>LlamaIndex Official Blog</strong></td>
+            <td>LlamaIndex</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 2</td>
+            <td><a href="https://www.llamaindex.ai/terms" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Stanford Institute for Human-Centered AI (HAI)</strong></td>
+            <td>Stanford University</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://www.stanford.edu/site/terms/" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>MIT CSAIL News</strong></td>
+            <td>MIT CSAIL</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://web.mit.edu/reference/terms.html" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Berkeley Artificial Intelligence Research (BAIR)</strong></td>
+            <td>UC Berkeley</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Allen Institute for AI (AI2)</strong></td>
+            <td>Allen Institute for AI</td>
+            <td><span class="badge badge-type badge-type-blog">blog</span></td>
+            <td><code>rss</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://allenai.org/terms" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Model Context Protocol (MCP) Spec Releases</strong></td>
+            <td>Anthropic / MCP Working Group</td>
+            <td><span class="badge badge-type badge-type-spec">spec</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>vLLM Inference Engine Releases</strong></td>
+            <td>vLLM Team</td>
+            <td><span class="badge badge-type badge-type-release">release</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>llama.cpp Engine Releases</strong></td>
+            <td>llama.cpp</td>
+            <td><span class="badge badge-type badge-type-release">release</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Ollama Local Model Releases</strong></td>
+            <td>Ollama</td>
+            <td><span class="badge badge-type badge-type-release">release</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>Hugging Face Transformers Releases</strong></td>
+            <td>Hugging Face</td>
+            <td><span class="badge badge-type badge-type-release">release</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 1</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+          <tr>
+            <td><strong>LangChain Releases</strong></td>
+            <td>LangChain</td>
+            <td><span class="badge badge-type badge-type-release">release</span></td>
+            <td><code>github_release</code></td>
+            <td>Tier 2</td>
+            <td><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <p><strong>Paper Radar</strong> — Automated ethical aggregation. Zero trackers, zero cookies, static architecture.</p>
+        <p class="text-muted">Generated at 2026-10-27 12:46:21 UTC • <a href="feed.xml">RSS Feed</a> • <a href="about.html">Verified Sources (23)</a></p>
+      </div>
+      <div class="footer-badges">
+        <span class="badge badge-subtle">SQLite + FTS5</span>
+        <span class="badge badge-subtle">Robots.txt Enforced</span>
+        <span class="badge badge-subtle">Prompt-Guarded</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

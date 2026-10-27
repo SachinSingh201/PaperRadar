@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Radar — Daily Digest</title>
+    <link>{{ site_url }}</link>
+    <description>Daily curated AI research papers, model releases, and lab breakthroughs.</description>
+    <language>en-us</language>
+    <lastBuildDate>{{ build_time_rfc }}</lastBuildDate>
+    <atom:link href="{{ site_url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    {% for item in items[:25] %}
+    <item>
+      <title>{{ item.title }}</title>
+      <link>{{ item.url }}</link>
+      <guid isPermaLink="false">{{ item.uid }}</guid>
+      <pubDate>{{ item.published_at }}</pubDate>
+      <description><![CDATA[{{ item.summary }}]]></description>
+      <category>{{ item.topics }}</category>
+      <author>{{ item.org or item.source }}</author>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

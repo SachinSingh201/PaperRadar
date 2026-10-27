@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}AI Labs & Organizations — Paper Radar{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">🏛️ Labs & Institutes</div>
+    <h1 class="hero-title">Browse by Research Organization</h1>
+    <p class="hero-subtitle">Track outputs from frontier industrial labs, universities, and open source collectives.</p>
+  </div>
+</section>
+
+<div class="topics-sections container">
+  {% for org_name, org_items in org_groups.items() %}
+  <section class="topic-group-section" id="org-{{ loop.index }}">
+    <div class="section-header">
+      <h2 class="section-title">{{ org_name }}</h2>
+      <span class="badge badge-subtle">{{ org_items|length }} items</span>
+    </div>
+
+    <div class="items-grid">
+      {% for item in org_items[:4] %}
+      <article class="radar-card">
+        <div class="card-header">
+          <span class="badge badge-type badge-type-{{ item.source_type }}">{{ item.source_type|upper }}</span>
+          <span class="card-date">{{ item.published_at[:10] }}</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+        </h3>
+        <div class="card-summary">
+          <div class="summary-content">
+            {{ item.summary | replace('\n', '<br>') | safe }}
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source ↗</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

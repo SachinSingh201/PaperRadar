@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Search Research Papers & Releases — Paper Radar{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">🔍 Instant Intelligence Search</div>
+    <h1 class="hero-title">Search Research Index</h1>
+    <p class="hero-subtitle">Fast, full-text client-side search across all indexed papers, abstracts, and release notes.</p>
+  </div>
+</section>
+
+<div class="search-container container">
+  <div class="search-bar-wrapper">
+    <input
+      type="text"
+      id="search-input"
+      class="search-input"
+      placeholder="Search terms e.g. 'RAG chunking', 'MCP', 'KV cache', 'DeepSeek', 'reasoning'..."
+      autofocus
+    >
+    <button id="search-clear" class="search-clear-btn" aria-label="Clear search">✕</button>
+  </div>
+
+  <div class="search-filters">
+    <div class="filter-group">
+      <span class="filter-group-label">Source Type:</span>
+      <select id="filter-type" class="filter-select">
+        <option value="">All Types</option>
+        <option value="paper">Papers</option>
+        <option value="release">Releases</option>
+        <option value="spec">Protocols & Specs</option>
+        <option value="blog">Lab Blogs</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group-label">Sort:</span>
+      <select id="filter-sort" class="filter-select">
+        <option value="score">Highest Score</option>
+        <option value="date">Most Recent</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="search-status" id="search-status">
+    Showing <span id="results-count">{{ items|length }}</span> indexed items
+  </div>
+
+  <div class="items-grid" id="search-results-grid">
+    {% for item in items %}
+    <article class="radar-card search-card" data-id="{{ item.id }}" data-type="{{ item.source_type }}" data-topics="{{ item.topics }}" data-score="{{ item.score }}" data-date="{{ item.published_at }}">
+      <div class="card-header">
+        <div class="card-meta-top">
+          <span class="badge badge-source">{{ item.org or item.source }}</span>
+          <span class="badge badge-type badge-type-{{ item.source_type }}">{{ item.source_type|upper }}</span>
+          <span class="card-date">{{ item.published_at[:10] }}</span>
+        </div>
+        <span class="score-val">★ {{ "%.2f"|format(item.score) }}</span>
+      </div>
+
+      <h2 class="card-title">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+      </h2>
+
+      {% if item.authors %}
+      <p class="card-authors">{{ item.authors }}</p>
+      {% endif %}
+
+      {% if item.topics %}
+      <div class="card-tags">
+        {% for tag in item.topics.split(',') %}
+        {% if tag.strip() %}
+        <span class="tag-pill">#{{ tag.strip() }}</span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="card-summary">
+        <div class="summary-content">
+          {{ item.summary | replace('\n', '<br>') | safe }}
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source ↗</a>
+        <button class="btn btn-secondary bookmark-btn" data-id="{{ item.id }}" data-uid="{{ item.uid }}" data-title="{{ item.title }}">⭐ Bookmark</button>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

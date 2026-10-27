@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's AI Intelligence Digest — Paper Radar</title>
+  <meta name="description" content="Curated, safe, daily intelligence on frontier AI research, LLMs, RAG, agents, MCP, and open models.">
+  <link rel="alternate" type="application/rss+xml" title="Paper Radar Digest" href="feed.xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-radar">📡</span>
+          <span class="logo-text">Paper Radar</span>
+        </a>
+        <span class="badge badge-profile">LOCAL_LITE</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link active">Today</a>
+        <a href="week.html" class="nav-link ">This Week</a>
+        <a href="topics.html" class="nav-link ">Topics</a>
+        <a href="organizations.html" class="nav-link ">Labs & Orgs</a>
+        <a href="search.html" class="nav-link ">Search</a>
+        <a href="about.html" class="nav-link ">About & Sources</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">⚡ Today's Radar Digest</div>
+    <h1 class="hero-title">Frontier AI Research & Releases</h1>
+    <p class="hero-subtitle">The most significant papers, model releases, and lab breakthroughs indexed over the last 48 hours, scored by authority and recency.</p>
+  </div>
+  <div class="stats-ribbon">
+    <div class="stat-box">
+      <span class="stat-number">8</span>
+      <span class="stat-label">Items Today</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">303</span>
+      <span class="stat-label">Total Indexed</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">10</span>
+      <span class="stat-label">Active Topics</span>
+    </div>
+  </div>
+</section>
+
+<div class="quick-filters">
+  <span class="filter-label">Quick Filter:</span>
+  <button class="filter-chip active" data-filter="all">All</button>
+  <button class="filter-chip" data-filter="paper">Papers</button>
+  <button class="filter-chip" data-filter="release">Releases</button>
+  <button class="filter-chip" data-filter="spec">Specs</button>
+  <button class="filter-chip" data-filter="blog">Lab Blogs</button>
+</div>
+
+<section class="items-grid" id="items-grid">
+  
+  <article class="radar-card" data-type="release" data-topics="multimodal" id="card-303">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">Ollama</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-25</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.85</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ollama/ollama/releases/tag/v0.40.11" target="_blank" rel="noopener noreferrer">Ollama Local Model Releases: v0.40.11</a>
+    </h2>
+
+    
+    <p class="card-authors">github-actions[bot]</p>
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#multimodal" class="tag-pill">#multimodal</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Speech Ollama can now generate speech on macOS.<br>- ollama run plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible /v1/audio/speech endpoint.<br>- " --ask " Is this a billing i...<br><br>**Why it matters:** Provides actionable insights and reference implementations for MULTIMODAL systems, addressing critical challenges highlighted by Ollama.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ollama/ollama/releases/tag/v0.40.11" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="303" data-uid="gh:ollama/ollama:v0.40.11" data-title="Ollama Local Model Releases: v0.40.11">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" data-topics="" id="card-301">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.73</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11905" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11905</a>
+    </h2>
+
+    
+    <p class="card-authors">github-actions[bot]</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - vulkan: rms norm optimization using subgroup reductions ( #29882 ) RMS Norm Subgroup reductions optimizaton Fix build error Improved optimization Make usage of BLOCK_SIZE consistent Add fast path to skip 2nd subgroupAdd Add AMD Vendor to subgroup reduction opt Add comment clarifying rms_dict and merge_maps behavior Add unroll Rebase Fixed syntax issue Add 128/256/512 block sizes to non-subgroup path Remove trailing whitespace Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/60062594 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64,...<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11905" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="301" data-uid="gh:ggml-org/llama.cpp:b11905" data-title="llama.cpp Engine Releases: b11905">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" data-topics="" id="card-300">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.70</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11906" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11906: ggml-cpu : rewrite concat as one row kernel for all types (#31179)</a>
+    </h2>
+
+    
+    <p class="card-authors">ServeurpersoCom</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Every dst row comes from src0 or src1, or for dim 0 from the row of src0 followed by the row of src1, so a single kernel covers every type: a dense source row is one memcpy, quantized types included, and a strided source is copied element by element with the element size known at compile time.<br>- Rows are split across threads instead of i2 alone, which is often 1, and are copied in tiles of 32: for a transposed source the elements are walked in the outer loop, so the rows of a tile read neighboring addresses instead of jumping a full row stride per element.<br>- Add transposed b cases to test_conca...<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11906" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="300" data-uid="gh:ggml-org/llama.cpp:b11906" data-title="llama.cpp Engine Releases: b11906: ggml-cpu : rewrite concat as one row kernel for all types (#31179)">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="release" data-topics="" id="card-302">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">llama.cpp</span>
+        <span class="badge badge-type badge-type-release">RELEASE</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.70</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11902" target="_blank" rel="noopener noreferrer">llama.cpp Engine Releases: b11902: sycl: add set_tensor_2d for faster tensor-split loading (#30358)</a>
+    </h2>
+
+    
+    <p class="card-authors">Captain-Tripps</p>
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - sycl: add set_tensor_2d for faster tensor-split loading Pack host rows into chunks of up to 64 MiB when destination rows are contiguous, avoiding a separate upload call for each row.<br>- Keep the existing per-row copy path for non-contiguous destinations.<br>- sycl: batch 2D tensor uploads through shared staging slots Implement set_tensor_2d to speed up tensor-split model loading by packing rows into the existing p...<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b11902" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="302" data-uid="gh:ggml-org/llama.cpp:b11902" data-title="llama.cpp Engine Releases: b11902: sycl: add set_tensor_2d for faster tensor-split loading (#30358)">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" data-topics="agents" id="card-250">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.66</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/introducing-gpt-6-1-terra" target="_blank" rel="noopener noreferrer">Introducing GPT-6.1 Terra</a>
+    </h2>
+
+    
+
+    
+    <div class="card-tags">
+      
+      
+      <a href="topics.html#agents" class="tag-pill">#agents</a>
+      
+      
+    </div>
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Bringing fast and capable computer use to everyone<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/introducing-gpt-6-1-terra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="250" data-uid="url:35e334c198740f74" data-title="Introducing GPT-6.1 Terra">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" data-topics="" id="card-247">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.61</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/chatgpt-expanding-world-of-work" target="_blank" rel="noopener noreferrer">ChatGPT’s expanding world of work</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.<br>- Focuses on architectural and algorithmic advancements in the domain.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/chatgpt-expanding-world-of-work" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="247" data-uid="url:27334100e818b985" data-title="ChatGPT’s expanding world of work">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" data-topics="" id="card-248">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/fanatics-streamline-fan-experience" target="_blank" rel="noopener noreferrer">How Fanatics and OpenAI streamline the fan experience</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look.<br>- Testing across roughly 30,000 MLB products showed 10% higher engagement.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/fanatics-streamline-fan-experience" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="248" data-uid="url:7e73eebe3e909303" data-title="How Fanatics and OpenAI streamline the fan experience">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+  <article class="radar-card" data-type="blog" data-topics="" id="card-249">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">OpenAI</span>
+        <span class="badge badge-type badge-type-blog">BLOG</span>
+        <span class="card-date">2026-10-26</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">0.60</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="https://openai.com/index/openai-cut-incident-investigation" target="_blank" rel="noopener noreferrer">How Ultrafast cut incident investigation from hours to minutes at OpenAI</a>
+    </h2>
+
+    
+
+    
+
+    <div class="card-summary">
+      <div class="summary-content">
+        - See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes.<br>- Explore faster security analysis, code refactoring, and daily workflows.<br>- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.<br><br>**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="https://openai.com/index/openai-cut-incident-investigation" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="249" data-uid="url:742d30efdc4090c1" data-title="How Ultrafast cut incident investigation from hours to minutes at OpenAI">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <p><strong>Paper Radar</strong> — Automated ethical aggregation. Zero trackers, zero cookies, static architecture.</p>
+        <p class="text-muted">Generated at 2026-10-27 12:46:21 UTC • <a href="feed.xml">RSS Feed</a> • <a href="about.html">Verified Sources (23)</a></p>
+      </div>
+      <div class="footer-badges">
+        <span class="badge badge-subtle">SQLite + FTS5</span>
+        <span class="badge badge-subtle">Robots.txt Enforced</span>
+        <span class="badge badge-subtle">Prompt-Guarded</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

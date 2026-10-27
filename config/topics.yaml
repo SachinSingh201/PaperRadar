@@ -1,0 +1,85 @@
+topics:
+  rag:
+    - retrieval-augmented
+    - rag
+    - retriever
+    - reranker
+    - vector database
+    - chunking
+    - graphrag
+    - dense retrieval
+    - hybrid search
+  llm:
+    - large language model
+    - llm
+    - transformer
+    - pretraining
+    - instruction tuning
+    - scaling law
+    - frontier model
+    - reasoning model
+  agents:
+    - agent
+    - tool use
+    - function calling
+    - planning
+    - multi-agent
+    - computer use
+    - autonomous agent
+    - workflow
+  mcp:
+    - model context protocol
+    - mcp
+    - tool protocol
+    - context protocol
+  eval:
+    - benchmark
+    - evaluation
+    - leaderboard
+    - llm-as-judge
+    - automated evaluation
+    - metrics
+  safety:
+    - alignment
+    - red teaming
+    - jailbreak
+    - interpretability
+    - guardrails
+    - safety
+    - steerability
+    - constitutional ai
+  multimodal:
+    - vision-language
+    - multimodal
+    - speech
+    - video generation
+    - diffusion
+    - audio
+    - image generation
+  efficiency:
+    - quantization
+    - distillation
+    - speculative decoding
+    - kv cache
+    - inference
+    - context window
+    - pruning
+    - flashattention
+  opensource:
+    - open weights
+    - open-source model
+    - release
+    - open foundation
+    - weights release
+  policy:
+    - ai policy
+    - regulation
+    - governance
+    - executive order
+    - copyright
+    - safety institute
+  okf:
+    - open knowledge
+    - okf
+    - open knowledge format
+    - open knowledge foundation

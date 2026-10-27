@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}About Paper Radar — Methodology & Sources{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">🛡️ Transparency & Methodology</div>
+    <h1 class="hero-title">About Paper Radar</h1>
+    <p class="hero-subtitle">An ethical, lightweight, automated intelligence pipeline designed for researchers, engineers, and machine learning practitioners.</p>
+  </div>
+</section>
+
+<div class="about-content container">
+  <div class="about-card">
+    <h2>Architecture & Core Principles</h2>
+    <p>Paper Radar is built around a zero-attack-surface static architecture. It runs on a lightweight schedule, fetches only public feeds and APIs, extracts concise factual summaries, and outputs a static site with no backend databases exposed to the public internet.</p>
+    <ul>
+      <li><strong>Official Feeds & APIs First:</strong> Only official feeds (Atom/RSS) and public REST APIs are indexed. No paywalled or login-gated content is ever scraped.</li>
+      <li><strong>Robots.txt Enforced:</strong> All domains are checked against their official <code>robots.txt</code>. Disallowed paths are completely skipped.</li>
+      <li><strong>Rate Limiting:</strong> Enforces a strict 3-second delay between requests per domain to ensure zero server burden on publishers.</li>
+      <li><strong>Untrusted Data Defense:</strong> All fetched content is treated as untrusted data and strictly sanitized against prompt injections.</li>
+      <li><strong>Privacy First:</strong> Zero trackers, zero analytics, zero external scripts, zero advertising.</li>
+    </ul>
+  </div>
+
+  <div class="about-card">
+    <h2>Scoring Algorithm</h2>
+    <p>Every paper and release receives a normalized composite score calculated as:</p>
+    <code>Score = 0.35 × Recency + 0.25 × Source Authority + 0.25 × Topic Relevance + 0.15 × Trending Signals</code>
+    <p>Recency follows an exponential decay with a 72-hour half-life, ensuring fresh breakthroughs are highlighted while high-impact models remain discoverable.</p>
+  </div>
+
+  <div class="about-card">
+    <h2>Indexed Sources Directory</h2>
+    <p>Below is the complete registry of active sources, access methods, and terms of service:</p>
+
+    <div class="sources-table-wrapper">
+      <table class="sources-table">
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Organization</th>
+            <th>Type</th>
+            <th>Method</th>
+            <th>Authority Tier</th>
+            <th>Terms of Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for source in sources_list %}
+          <tr>
+            <td><strong>{{ source.name }}</strong></td>
+            <td>{{ source.org }}</td>
+            <td><span class="badge badge-type badge-type-{{ source.type }}">{{ source.type }}</span></td>
+            <td><code>{{ source.method }}</code></td>
+            <td>Tier {{ source.authority_tier }}</td>
+            <td><a href="{{ source.terms_url }}" target="_blank" rel="noopener noreferrer">Terms ↗</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

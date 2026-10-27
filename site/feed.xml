@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Radar — Daily Digest</title>
+    <link>https://localhost:8000</link>
+    <description>Daily curated AI research papers, model releases, and lab breakthroughs.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Oct 2026 12:46:21 GMT</lastBuildDate>
+    <atom:link href="https://localhost:8000/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Ollama Local Model Releases: v0.40.11</title>
+      <link>https://github.com/ollama/ollama/releases/tag/v0.40.11</link>
+      <guid isPermaLink="false">gh:ollama/ollama:v0.40.11</guid>
+      <pubDate>2026-10-25T18:06:57Z</pubDate>
+      <description><![CDATA[- Speech Ollama can now generate speech on macOS.
+- ollama run plays text or a chat model&#39;s reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible /v1/audio/speech endpoint.
+- &#34; --ask &#34; Is this a billing i...
+
+**Why it matters:** Provides actionable insights and reference implementations for MULTIMODAL systems, addressing critical challenges highlighted by Ollama.]]></description>
+      <category>multimodal</category>
+      <author>Ollama</author>
+    </item>
+    
+    <item>
+      <title>llama.cpp Engine Releases: b11905</title>
+      <link>https://github.com/ggml-org/llama.cpp/releases/tag/b11905</link>
+      <guid isPermaLink="false">gh:ggml-org/llama.cpp:b11905</guid>
+      <pubDate>2026-10-26T19:12:18Z</pubDate>
+      <description><![CDATA[- vulkan: rms norm optimization using subgroup reductions ( #29882 ) RMS Norm Subgroup reductions optimizaton Fix build error Improved optimization Make usage of BLOCK_SIZE consistent Add fast path to skip 2nd subgroupAdd Add AMD Vendor to subgroup reduction opt Add comment clarifying rms_dict and merge_maps behavior Add unroll Rebase Fixed syntax issue Add 128/256/512 block sizes to non-subgroup path Remove trailing whitespace Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/60062594 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64,...
+- Focuses on architectural and algorithmic advancements in the domain.
+- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.]]></description>
+      <category></category>
+      <author>llama.cpp</author>
+    </item>
+    
+    <item>
+      <title>llama.cpp Engine Releases: b11906: ggml-cpu : rewrite concat as one row kernel for all types (#31179)</title>
+      <link>https://github.com/ggml-org/llama.cpp/releases/tag/b11906</link>
+      <guid isPermaLink="false">gh:ggml-org/llama.cpp:b11906</guid>
+      <pubDate>2026-10-26T14:18:45Z</pubDate>
+      <description><![CDATA[- Every dst row comes from src0 or src1, or for dim 0 from the row of src0 followed by the row of src1, so a single kernel covers every type: a dense source row is one memcpy, quantized types included, and a strided source is copied element by element with the element size known at compile time.
+- Rows are split across threads instead of i2 alone, which is often 1, and are copied in tiles of 32: for a transposed source the elements are walked in the outer loop, so the rows of a tile read neighboring addresses instead of jumping a full row stride per element.
+- Add transposed b cases to test_conca...
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.]]></description>
+      <category></category>
+      <author>llama.cpp</author>
+    </item>
+    
+    <item>
+      <title>llama.cpp Engine Releases: b11902: sycl: add set_tensor_2d for faster tensor-split loading (#30358)</title>
+      <link>https://github.com/ggml-org/llama.cpp/releases/tag/b11902</link>
+      <guid isPermaLink="false">gh:ggml-org/llama.cpp:b11902</guid>
+      <pubDate>2026-10-26T14:12:25Z</pubDate>
+      <description><![CDATA[- sycl: add set_tensor_2d for faster tensor-split loading Pack host rows into chunks of up to 64 MiB when destination rows are contiguous, avoiding a separate upload call for each row.
+- Keep the existing per-row copy path for non-contiguous destinations.
+- sycl: batch 2D tensor uploads through shared staging slots Implement set_tensor_2d to speed up tensor-split model loading by packing rows into the existing p...
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by llama.cpp.]]></description>
+      <category></category>
+      <author>llama.cpp</author>
+    </item>
+    
+    <item>
+      <title>Introducing GPT-6.1 Terra</title>
+      <link>https://openai.com/index/introducing-gpt-6-1-terra</link>
+      <guid isPermaLink="false">url:35e334c198740f74</guid>
+      <pubDate>2026-10-26T00:00:00Z</pubDate>
+      <description><![CDATA[- Bringing fast and capable computer use to everyone
+- Focuses on architectural and algorithmic advancements in the domain.
+- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.
+
+**Why it matters:** Provides actionable insights and reference implementations for AGENTS systems, addressing critical challenges highlighted by OpenAI.]]></description>
+      <category>agents</category>
+      <author>OpenAI</author>
+    </item>
+    
+    <item>
+      <title>ChatGPT’s expanding world of work</title>
+      <link>https://openai.com/index/chatgpt-expanding-world-of-work</link>
+      <guid isPermaLink="false">url:27334100e818b985</guid>
+      <pubDate>2026-10-26T10:00:00Z</pubDate>
+      <description><![CDATA[- Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.
+- Focuses on architectural and algorithmic advancements in the domain.
+- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.]]></description>
+      <category></category>
+      <author>OpenAI</author>
+    </item>
+    
+    <item>
+      <title>How Fanatics and OpenAI streamline the fan experience</title>
+      <link>https://openai.com/index/fanatics-streamline-fan-experience</link>
+      <guid isPermaLink="false">url:7e73eebe3e909303</guid>
+      <pubDate>2026-10-26T07:00:00Z</pubDate>
+      <description><![CDATA[- Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look.
+- Testing across roughly 30,000 MLB products showed 10% higher engagement.
+- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.]]></description>
+      <category></category>
+      <author>OpenAI</author>
+    </item>
+    
+    <item>
+      <title>How Ultrafast cut incident investigation from hours to minutes at OpenAI</title>
+      <link>https://openai.com/index/openai-cut-incident-investigation</link>
+      <guid isPermaLink="false">url:742d30efdc4090c1</guid>
+      <pubDate>2026-10-26T07:00:00Z</pubDate>
+      <description><![CDATA[- See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes.
+- Explore faster security analysis, code refactoring, and daily workflows.
+- Demonstrates measurable improvements and technical feasibility across standard evaluation benchmarks.
+
+**Why it matters:** Provides actionable insights and reference implementations for AI systems, addressing critical challenges highlighted by OpenAI.]]></description>
+      <category></category>
+      <author>OpenAI</author>
+    </item>
+    
+  </channel>
+</rss>

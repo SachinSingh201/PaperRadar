@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:github.com,2008:https://github.com/modelcontextprotocol/specification/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/modelcontextprotocol/specification/releases"/>
+  <title>Release notes from specification</title>
+  <updated>2024-11-25T17:00:00Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/891234567/v1.0.0</id>
+    <updated>2024-11-25T17:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/modelcontextprotocol/specification/releases/tag/v1.0.0"/>
+    <title>v1.0.0: Initial Model Context Protocol Specification</title>
+    <content type="html">&lt;p&gt;Initial stable specification release for the Model Context Protocol (MCP), establishing open standards for secure context exchange and tool integrations between AI models and applications.&lt;/p&gt;</content>
+    <author>
+      <name>MCP Working Group</name>
+    </author>
+  </entry>
+</feed>

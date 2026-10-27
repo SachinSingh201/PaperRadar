@@ -1,0 +1,15 @@
+[
+  {
+    "paper": {
+      "id": "2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "summary": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated per token. We introduce Multi-head Latent Attention (MLA) and DeepSeekMoE architecture for efficient inference and cost-effective training. DeepSeek-V3 outperforms leading open-source models on math, coding, and benchmark evaluations.",
+      "authors": [
+        {"name": "DeepSeek-AI"}
+      ],
+      "publishedAt": "2024-12-27T08:00:00.000Z",
+      "upvotes": 340
+    },
+    "publishedAt": "2024-12-27T08:00:00.000Z"
+  }
+]

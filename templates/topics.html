@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Browse AI Topics — Paper Radar{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">🏷️ Topic Taxonomy</div>
+    <h1 class="hero-title">Browse by AI Research Field</h1>
+    <p class="hero-subtitle">Focus on your specific domain of interest: RAG, Agents, MCP, LLM architecture, or safety.</p>
+  </div>
+</section>
+
+<div class="topic-navigation container">
+  {% for topic_name, topic_items in topic_groups.items() %}
+  <a href="#topic-{{ topic_name }}" class="topic-nav-pill">
+    #{{ topic_name|upper }} <span class="pill-count">{{ topic_items|length }}</span>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="topics-sections container">
+  {% for topic_name, topic_items in topic_groups.items() %}
+  <section class="topic-group-section" id="topic-{{ topic_name }}">
+    <div class="section-header">
+      <h2 class="section-title">#{{ topic_name|upper }}</h2>
+      <span class="badge badge-subtle">{{ topic_items|length }} items</span>
+    </div>
+
+    <div class="items-grid">
+      {% for item in topic_items[:6] %}
+      <article class="radar-card">
+        <div class="card-header">
+          <div class="card-meta-top">
+            <span class="badge badge-source">{{ item.org or item.source }}</span>
+            <span class="card-date">{{ item.published_at[:10] }}</span>
+          </div>
+          <span class="score-val">★ {{ "%.2f"|format(item.score) }}</span>
+        </div>
+        <h3 class="card-title">
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+        </h3>
+        <div class="card-summary">
+          <div class="summary-content">
+            {{ item.summary | replace('\n', '<br>') | safe }}
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source ↗</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

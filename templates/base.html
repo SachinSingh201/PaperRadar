@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Paper Radar — Daily Machine Learning & Frontier AI Digest{% endblock %}</title>
+  <meta name="description" content="{% block description %}Curated, safe, daily intelligence on frontier AI research, LLMs, RAG, agents, MCP, and open models.{% endblock %}">
+  <link rel="alternate" type="application/rss+xml" title="Paper Radar Digest" href="feed.xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-radar">📡</span>
+          <span class="logo-text">Paper Radar</span>
+        </a>
+        <span class="badge badge-profile">{{ profile }}</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link {% if active_page == 'today' %}active{% endif %}">Today</a>
+        <a href="week.html" class="nav-link {% if active_page == 'week' %}active{% endif %}">This Week</a>
+        <a href="topics.html" class="nav-link {% if active_page == 'topics' %}active{% endif %}">Topics</a>
+        <a href="organizations.html" class="nav-link {% if active_page == 'orgs' %}active{% endif %}">Labs & Orgs</a>
+        <a href="search.html" class="nav-link {% if active_page == 'search' %}active{% endif %}">Search</a>
+        <a href="about.html" class="nav-link {% if active_page == 'about' %}active{% endif %}">About & Sources</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <p><strong>Paper Radar</strong> — Automated ethical aggregation. Zero trackers, zero cookies, static architecture.</p>
+        <p class="text-muted">Generated at {{ build_time }} UTC • <a href="feed.xml">RSS Feed</a> • <a href="about.html">Verified Sources ({{ total_sources }})</a></p>
+      </div>
+      <div class="footer-badges">
+        <span class="badge badge-subtle">SQLite + FTS5</span>
+        <span class="badge badge-subtle">Robots.txt Enforced</span>
+        <span class="badge badge-subtle">Prompt-Guarded</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}This Week's Top AI Research — Paper Radar{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">📊 Weekly Intelligence</div>
+    <h1 class="hero-title">This Week's Top 50 Papers & Releases</h1>
+    <p class="hero-subtitle">Curated top impact research across labs, aggregators, and protocols over the last 7 days.</p>
+  </div>
+</section>
+
+<section class="items-grid">
+  {% for item in items %}
+  <article class="radar-card" data-type="{{ item.source_type }}" id="card-{{ item.id }}">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">{{ item.org or item.source }}</span>
+        <span class="badge badge-type badge-type-{{ item.source_type }}">{{ item.source_type|upper }}</span>
+        <span class="card-date">{{ item.published_at[:10] }}</span>
+      </div>
+      <div class="card-score-box" title="Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">{{ "%.2f"|format(item.score) }}</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+    </h2>
+
+    {% if item.authors %}
+    <p class="card-authors">{{ item.authors }}</p>
+    {% endif %}
+
+    {% if item.topics %}
+    <div class="card-tags">
+      {% for tag in item.topics.split(',') %}
+      {% if tag.strip() %}
+      <a href="topics.html#{{ tag.strip() }}" class="tag-pill">#{{ tag.strip() }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="card-summary">
+      <div class="summary-content">
+        {{ item.summary | replace('\n', '<br>') | safe }}
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="{{ item.id }}" data-uid="{{ item.uid }}" data-title="{{ item.title }}">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  {% else %}
+  <div class="empty-state">
+    <h3>No weekly items found.</h3>
+    <p>Run the pipeline to populate intelligence items.</p>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}

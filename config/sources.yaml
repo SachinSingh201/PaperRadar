@@ -1,0 +1,257 @@
+sources:
+  # --- Paper Aggregators (Official APIs) ---
+  - id: arxiv-cs-ai
+    name: arXiv Computer Science & AI
+    type: paper
+    method: arxiv
+    url: "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.IR+OR+cat:cs.CV+OR+cat:cs.MA+OR+cat:stat.ML&sortBy=submittedDate&sortOrder=descending&max_results=35"
+    domain: export.arxiv.org
+    org: arXiv
+    authority_tier: 1
+    terms_url: "https://arxiv.org/help/api/tou"
+    enabled: true
+
+  - id: huggingface-daily-papers
+    name: Hugging Face Daily Papers
+    type: paper
+    method: huggingface
+    url: "https://huggingface.co/api/daily_papers"
+    domain: huggingface.co
+    org: Hugging Face
+    authority_tier: 1
+    terms_url: "https://huggingface.co/terms-of-service"
+    enabled: true
+
+  # --- Company & Frontier Lab Blogs (Official RSS / Atom) ---
+  - id: google-deepmind
+    name: Google DeepMind Research
+    type: blog
+    method: rss
+    url: "https://deepmind.google/blog/rss.xml"
+    domain: deepmind.google
+    org: Google DeepMind
+    authority_tier: 1
+    terms_url: "https://policies.google.com/terms"
+    enabled: true
+
+  - id: google-research
+    name: Google Research Blog
+    type: blog
+    method: rss
+    url: "https://research.google/blog/rss/"
+    domain: research.google
+    org: Google Research
+    authority_tier: 1
+    terms_url: "https://policies.google.com/terms"
+    enabled: true
+
+  - id: openai-news
+    name: OpenAI News & Research
+    type: blog
+    method: rss
+    url: "https://openai.com/news/rss.xml"
+    domain: openai.com
+    org: OpenAI
+    authority_tier: 1
+    terms_url: "https://openai.com/policies/terms-of-use/"
+    enabled: true
+
+  - id: anthropic-news
+    name: Anthropic News & Announcements
+    type: blog
+    method: rss
+    url: "https://www.anthropic.com/news/rss.xml"
+    domain: www.anthropic.com
+    org: Anthropic
+    authority_tier: 1
+    terms_url: "https://www.anthropic.com/legal/consumer-terms"
+    enabled: true
+
+  - id: microsoft-research
+    name: Microsoft Research Blog
+    type: blog
+    method: rss
+    url: "https://www.microsoft.com/en-us/research/feed/"
+    domain: www.microsoft.com
+    org: Microsoft Research
+    authority_tier: 1
+    terms_url: "https://www.microsoft.com/en-us/legal/terms-of-use"
+    enabled: true
+
+  - id: nvidia-blog
+    name: NVIDIA Technical & Research Blog
+    type: blog
+    method: rss
+    url: "https://blogs.nvidia.com/feed/"
+    domain: blogs.nvidia.com
+    org: NVIDIA
+    authority_tier: 1
+    terms_url: "https://www.nvidia.com/en-us/about-nvidia/legal-info/"
+    enabled: true
+
+  - id: apple-ml-research
+    name: Apple Machine Learning Research
+    type: blog
+    method: rss
+    url: "https://machinelearning.apple.com/feed.xml"
+    domain: machinelearning.apple.com
+    org: Apple
+    authority_tier: 1
+    terms_url: "https://www.apple.com/legal/internet-services/terms/site.html"
+    enabled: true
+
+  - id: huggingface-blog
+    name: Hugging Face Blog
+    type: blog
+    method: rss
+    url: "https://huggingface.co/blog/feed.xml"
+    domain: huggingface.co
+    org: Hugging Face
+    authority_tier: 1
+    terms_url: "https://huggingface.co/terms-of-service"
+    enabled: true
+
+  - id: cohere-blog
+    name: Cohere AI Blog
+    type: blog
+    method: rss
+    url: "https://cohere.com/blog/rss"
+    domain: cohere.com
+    org: Cohere
+    authority_tier: 2
+    terms_url: "https://cohere.com/terms-of-use"
+    enabled: true
+
+  - id: langchain-blog
+    name: LangChain Official Blog
+    type: blog
+    method: rss
+    url: "https://blog.langchain.dev/rss/"
+    domain: blog.langchain.dev
+    org: LangChain
+    authority_tier: 2
+    terms_url: "https://www.langchain.com/terms-of-service"
+    enabled: true
+
+  - id: llamaindex-blog
+    name: LlamaIndex Official Blog
+    type: blog
+    method: rss
+    url: "https://www.llamaindex.ai/blog/rss.xml"
+    domain: www.llamaindex.ai
+    org: LlamaIndex
+    authority_tier: 2
+    terms_url: "https://www.llamaindex.ai/terms"
+    enabled: true
+
+  # --- Research Institutes & Universities ---
+  - id: stanford-hai
+    name: Stanford Institute for Human-Centered AI (HAI)
+    type: blog
+    method: rss
+    url: "https://hai.stanford.edu/news/rss.xml"
+    domain: hai.stanford.edu
+    org: Stanford University
+    authority_tier: 1
+    terms_url: "https://www.stanford.edu/site/terms/"
+    enabled: true
+
+  - id: mit-csail
+    name: MIT CSAIL News
+    type: blog
+    method: rss
+    url: "https://www.csail.mit.edu/news-rss.xml"
+    domain: www.csail.mit.edu
+    org: MIT CSAIL
+    authority_tier: 1
+    terms_url: "https://web.mit.edu/reference/terms.html"
+    enabled: true
+
+  - id: berkeley-bair
+    name: Berkeley Artificial Intelligence Research (BAIR)
+    type: blog
+    method: rss
+    url: "https://bair.berkeley.edu/blog/feed.xml"
+    domain: bair.berkeley.edu
+    org: UC Berkeley
+    authority_tier: 1
+    terms_url: "https://bair.berkeley.edu/"
+    enabled: true
+
+  - id: allen-ai
+    name: Allen Institute for AI (AI2)
+    type: blog
+    method: rss
+    url: "https://allenai.org/blog/rss.xml"
+    domain: allenai.org
+    org: Allen Institute for AI
+    authority_tier: 1
+    terms_url: "https://allenai.org/terms"
+    enabled: true
+
+  # --- Protocol & Open-Source Releases (GitHub Atom Feeds) ---
+  - id: mcp-specification
+    name: Model Context Protocol (MCP) Spec Releases
+    type: spec
+    method: github_release
+    url: "https://github.com/modelcontextprotocol/specification/releases.atom"
+    domain: github.com
+    org: Anthropic / MCP Working Group
+    authority_tier: 1
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true
+
+  - id: vllm-releases
+    name: vLLM Inference Engine Releases
+    type: release
+    method: github_release
+    url: "https://github.com/vllm-project/vllm/releases.atom"
+    domain: github.com
+    org: vLLM Team
+    authority_tier: 1
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true
+
+  - id: llama-cpp-releases
+    name: llama.cpp Engine Releases
+    type: release
+    method: github_release
+    url: "https://github.com/ggerganov/llama.cpp/releases.atom"
+    domain: github.com
+    org: llama.cpp
+    authority_tier: 1
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true
+
+  - id: ollama-releases
+    name: Ollama Local Model Releases
+    type: release
+    method: github_release
+    url: "https://github.com/ollama/ollama/releases.atom"
+    domain: github.com
+    org: Ollama
+    authority_tier: 1
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true
+
+  - id: transformers-releases
+    name: Hugging Face Transformers Releases
+    type: release
+    method: github_release
+    url: "https://github.com/huggingface/transformers/releases.atom"
+    domain: github.com
+    org: Hugging Face
+    authority_tier: 1
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true
+
+  - id: langchain-releases
+    name: LangChain Releases
+    type: release
+    method: github_release
+    url: "https://github.com/langchain-ai/langchain/releases.atom"
+    domain: github.com
+    org: LangChain
+    authority_tier: 2
+    terms_url: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    enabled: true

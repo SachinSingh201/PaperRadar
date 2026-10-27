@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google DeepMind Research Blog</title>
+    <link>https://deepmind.google/blog/</link>
+    <description>Latest research breakthroughs from Google DeepMind</description>
+    <item>
+      <title>Gemini 2.0: Advancing Multimodal Reasoning and Autonomous Agent Capabilities</title>
+      <link>https://deepmind.google/blog/gemini-2-0-reasoning-agents/</link>
+      <guid>https://deepmind.google/blog/gemini-2-0-reasoning-agents/</guid>
+      <pubDate>Mon, 13 Jan 2025 10:00:00 GMT</pubDate>
+      <author>DeepMind Team</author>
+      <description>We introduce Gemini 2.0, our next-generation multimodal model engineered for complex agentic workflows and real-time audio and vision processing. We develop native tool use and code execution mechanisms that let agents act in external environments safely. Evaluation across competitive benchmarks reveals state-of-the-art reasoning and substantial efficiency improvements.</description>
+    </item>
+  </channel>
+</rss>

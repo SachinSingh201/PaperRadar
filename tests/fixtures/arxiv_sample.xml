@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title type="html">arXiv Query</title>
+  <id>http://arxiv.org/api/query?search_query=cat:cs.AI</id>
+  <updated>2025-01-15T00:00:00Z</updated>
+  <entry>
+    <id>http://arxiv.org/abs/2501.01234v1</id>
+    <updated>2025-01-14T18:00:00Z</updated>
+    <published>2025-01-14T18:00:00Z</published>
+    <title>GraphRAG: Unifying Knowledge Graphs and Retrieval-Augmented Generation for Complex Reasoning</title>
+    <summary>Retrieval-Augmented Generation (RAG) significantly improves LLM accuracy by grounding responses in external documents. However, conventional chunk-based retrievers struggle with multi-hop reasoning across interconnected documents. We propose GraphRAG, a novel framework combining hierarchical knowledge graphs with dense vector retrieval. We present an end-to-end pipeline for entity extraction and dynamic graph traversal. Extensive experiments show that GraphRAG outperforms standard vector baselines by 28% on multi-hop question answering benchmarks.</summary>
+    <author>
+      <name>Alice Johnson</name>
+    </author>
+    <author>
+      <name>Bob Smith</name>
+    </author>
+    <arxiv:primary_category term="cs.AI" />
+    <category term="cs.AI" />
+    <category term="cs.CL" />
+  </entry>
+</feed>

@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Today's AI Intelligence Digest — Paper Radar{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-pill">⚡ Today's Radar Digest</div>
+    <h1 class="hero-title">Frontier AI Research & Releases</h1>
+    <p class="hero-subtitle">The most significant papers, model releases, and lab breakthroughs indexed over the last 48 hours, scored by authority and recency.</p>
+  </div>
+  <div class="stats-ribbon">
+    <div class="stat-box">
+      <span class="stat-number">{{ items|length }}</span>
+      <span class="stat-label">Items Today</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">{{ total_items }}</span>
+      <span class="stat-label">Total Indexed</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">{{ top_topics|length }}</span>
+      <span class="stat-label">Active Topics</span>
+    </div>
+  </div>
+</section>
+
+<div class="quick-filters">
+  <span class="filter-label">Quick Filter:</span>
+  <button class="filter-chip active" data-filter="all">All</button>
+  <button class="filter-chip" data-filter="paper">Papers</button>
+  <button class="filter-chip" data-filter="release">Releases</button>
+  <button class="filter-chip" data-filter="spec">Specs</button>
+  <button class="filter-chip" data-filter="blog">Lab Blogs</button>
+</div>
+
+<section class="items-grid" id="items-grid">
+  {% for item in items %}
+  <article class="radar-card" data-type="{{ item.source_type }}" data-topics="{{ item.topics }}" id="card-{{ item.id }}">
+    <div class="card-header">
+      <div class="card-meta-top">
+        <span class="badge badge-source">{{ item.org or item.source }}</span>
+        <span class="badge badge-type badge-type-{{ item.source_type }}">{{ item.source_type|upper }}</span>
+        <span class="card-date">{{ item.published_at[:10] }}</span>
+      </div>
+      <div class="card-score-box" title="Relevance & Authority Composite Score">
+        <span class="score-icon">★</span>
+        <span class="score-val">{{ "%.2f"|format(item.score) }}</span>
+      </div>
+    </div>
+
+    <h2 class="card-title">
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+    </h2>
+
+    {% if item.authors %}
+    <p class="card-authors">{{ item.authors }}</p>
+    {% endif %}
+
+    {% if item.topics %}
+    <div class="card-tags">
+      {% for tag in item.topics.split(',') %}
+      {% if tag.strip() %}
+      <a href="topics.html#{{ tag.strip() }}" class="tag-pill">#{{ tag.strip() }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="card-summary">
+      <div class="summary-content">
+        {{ item.summary | replace('\n', '<br>') | safe }}
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Read Original Source ↗
+      </a>
+      <button class="btn btn-secondary bookmark-btn" data-id="{{ item.id }}" data-uid="{{ item.uid }}" data-title="{{ item.title }}">
+        ⭐ Bookmark
+      </button>
+    </div>
+  </article>
+  {% else %}
+  <div class="empty-state">
+    <h3>No new items indexed today.</h3>
+    <p>Run <code>python -m radar fetch</code> to retrieve the latest research items.</p>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
